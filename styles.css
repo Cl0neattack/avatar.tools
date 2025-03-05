@@ -1,0 +1,204 @@
+/* styles.css */
+
+body {
+    background-color: #0A0E14;
+    color: #E1E8ED;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metrics-bar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1C1F26;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1C1F26;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filter-bar label {
+    margin-right: 10px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.filter-bar select {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #27303B;
+    color: #E1E8ED;
+    border: 1px solid #27303B;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: not-allowed;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1C1F26;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar label {
+    margin-right: 10px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    background-color: #27303B;
+    color: #E1E8ED;
+    border: 1px solid #27303B;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 250px;
+}
+
+
+table {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #1C1F26;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #27303B;
+}
+
+th {
+    cursor: pointer;
+    background-color: #27303B;
+    font-weight: bold;
+}
+
+th:hover {
+    background-color: #2F3A47;
+}
+
+tbody tr:hover {
+    background-color: #2F3A47;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Additional responsive styling */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-bar label, .filter-bar select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .filter-bar select {
+        margin-right: 0;
+    }
+
+    .metrics-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.sort-arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.sort-arrow.asc::before {
+    content: '↑'; /* Unicode character for upward arrow */
+}
+
+.sort-arrow.desc::before {
+    content: '↓'; /* Unicode character for downward arrow */
+}
+
+.sort-arrow.inactive::before {
+    content: '';
+}
+
+/* Base style for Tactician images in the table */
+td img {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    max-width: 50px; /* Limit the width to 50px */
+    height: auto; /* Adjust the height automatically to maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover effect to enlarge the image while maintaining aspect ratio */
+td:hover img {
+    max-width: 100px; /* Increase the width on hover */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    transform: scale(1.5); /* Optional: Smoothly scale the image slightly */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .disclaimer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
