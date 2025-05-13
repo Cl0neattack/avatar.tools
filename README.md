@@ -1,6 +1,6 @@
 # avatar.tools
 
-This project is a massive waste of time. All it does it scrape through TFT games and compile statistics on different little legends (top 4%, win % and average placement). As everyone knows, TFT is a pay-to-win game and the more expensive the little legend the better your results will be. 
+ All it does it scrape through TFT games and compile statistics on different little legends (top 4%, win % and average placement). As everyone knows, TFT is a pay-to-win game and the more expensive the little legend the better your results will be. 
 
 ## This project is currently on hold while I wait for a production key. Using a development key doesn't let me process enough meaningful data.
 
@@ -71,4 +71,4 @@ Images:
 
 Meta project things to do:
 
-- add contribution guidelines lmfao
+- add contribution guidelines
